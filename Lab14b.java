@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//ï¿½ A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -13,6 +13,9 @@ public class Lab14b
 		int[] one = {1,2,3,4,5,6,7,8,9,10};
 		int[] two = {1,2,3,9,11,20,30};
 		//add more test cases
+		int[] three = {16,15,14,13,10,8,4,2};
+		int[] four = {30,27,26,23,22,21,20,19};
+
 
 
 		System.out.println(Arrays.toString(one));
@@ -20,13 +23,28 @@ public class Lab14b
 		System.out.println(Arrays.toString(two));
 		System.out.println("is going Up ?  " + ArrayFunHouseTwo.goingUp(two));
 		//add more test cases
+		System.out.println(Arrays.toString(three));
+		System.out.println("is going Up ?  " + ArrayFunHouseTwo.goingUp(three));
+		System.out.println(Arrays.toString(four));
+		System.out.println("is going Up ?  " + ArrayFunHouseTwo.goingUp(four));
 
 		System.out.println("\n\n"+Arrays.toString(one));
 		System.out.println("is going Down ?  " + ArrayFunHouseTwo.goingDown(one));
 		System.out.println(Arrays.toString(two));
+		System.out.println("is going Down ?  " + ArrayFunHouseTwo.goingDown(two));
 		//add more test cases
-
-		System.out.println("\n\n first 3 values greater than 8" + Arrays.toString(ArrayFunHouseTwo.getCountValuesBiggerThanX(two,3,8))  );
+		System.out.println(""+Arrays.toString(three));
+		System.out.println("is going Down ?  " + ArrayFunHouseTwo.goingDown(three));
+		System.out.println(Arrays.toString(four));
+		System.out.println("is going Down ?  " + ArrayFunHouseTwo.goingDown(four));
+ 
+		
+	    System.out.println("\n\n" +Arrays.toString(one));
+		System.out.println("first 3 values greater than 8 " + Arrays.toString(ArrayFunHouseTwo.getCountValuesBiggerThanX(one,3,8))  );
+		System.out.println(Arrays.toString(two));
+		System.out.println(" first 3 values greater than 9 " + Arrays.toString(ArrayFunHouseTwo.getCountValuesBiggerThanX(two,3,9))  );
+		System.out.println(Arrays.toString(three));
+		System.out.println(" first 3 values greater than 13 " + Arrays.toString(ArrayFunHouseTwo.getCountValuesBiggerThanX(three,3,13)  ));
 
 	}
 }
